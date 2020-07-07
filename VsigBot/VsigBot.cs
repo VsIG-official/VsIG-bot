@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Telegram.Bot;
+using dotenv.net.Utilities;
 
 namespace VsigBot
 {
@@ -11,11 +8,13 @@ namespace VsigBot
 	{
 		static void Main()
 		{
-			var botClient = new TelegramBotClient("YOUR_ACCESS_TOKEN_HERE");
+			//var envReader = new EnvReader();
+			//var value = envReader.GetStringValue("TOKEN");
+			var botClient = new TelegramBotClient("");
 			var me = botClient.GetMeAsync().Result;
 			Console.WriteLine(
-			  $"Hello, World! I am user {me.Id} and my name is {me.FirstName}."
-			);
+			$"Hello, World! I am user {me.Id} and my name is {me.FirstName}.");
+			Console.ReadKey();
 		}
 	}
 }

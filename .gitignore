@@ -446,3 +446,4 @@ VsigBot/.vs/VsigBot/v16/.suo
 *.sln
 VsigBot/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
 VsigBot/Properties/AssemblyInfo.cs
+VsigBot/.env
